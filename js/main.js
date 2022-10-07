@@ -52,3 +52,5 @@ button.addEventListener("click", () => {
 const clearAkan = ()=>{
   akanelement.innerHTML="";
 }
+
+document.getElementById("birthday").addEventListener("focus",clearAkan);
