@@ -13,7 +13,7 @@
   </head>
   <div class="container">
     <div class="row">
-      <h1> </h1>
+      <h1></h1>
       <p></p>
     </div>
     <div class="row">
@@ -25,15 +25,18 @@
             In the Akan societies of West Africa, names and the process of
             naming are essential since everyone and almost every living entity
             has a place and mission in the world. The name of a person or entity
-            reflects its purpose in life. The a naming ceremony takes places usually at the
-            father's house on the eighth day, that is, a week after and on the
-            day the child was born.
+            reflects its purpose in life. The a naming ceremony takes places
+            usually at the father's house on the eighth day, that is, a week
+            after and on the day the child was born.
           </p>
-          <br>
-          <p> Are You Curious about your Akan name? Enter your date of Birth below to find out!</p>
+          <br />
+          <p>
+            Are You Curious about your Akan name? Enter your date of Birth below
+            to find out!
+          </p>
         </div>
       </div>
-      
+
       <div class="col-md-5">
         <div
           id="carouselExampleSlidesOnly"
@@ -63,22 +66,30 @@
       </div>
     </div>
     <div class="row">
-      <div class="card" style="width: 18rem">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <form class="row">
-            <label>Enter Your Date of Birth:</label>
-
-            <input type="date" id="birthday" name="birthday" />
-            <select name="gender" id="gender">
-              <option value="none" selected disabled hidden>
-                Select Gender
-              </option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-            </select>
-            <input type="button" id="submit" class="col-md-1" />
-          </form>
+      <div class="col-md-4">
+        <div class="card card-body h-100">
+          <div class="card-body ">
+            <h5 class="card-title">Enter Date of Birth</h5>
+            <form class="row">
+              <input type="date" id="birthday" name="birthday" />
+              <select name="gender" id="gender">
+                <option value="none" selected disabled hidden>
+                  Select Gender
+                </option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <input type="button" id="submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-7">
+        <div class="card card-body h-100">
+          <div class="card-body">
+            <h2 id="akanName"></h2>
+          </div>
         </div>
       </div>
     </div>
