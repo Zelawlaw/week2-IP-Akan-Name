@@ -46,12 +46,12 @@ button.addEventListener("click", () => {
       alert("Kindly choose Gender!");
       return;
   }
-  akanelement.innerHTML =akan_name;
+  akanelement.innerHTML = akan_name;
 });
 
-const clearAkan = ()=>{
-  akanelement.innerHTML="";
-}
+const clearAkan = () => {
+  akanelement.innerHTML = "";
+};
 
-document.getElementById("birthday").addEventListener("focus",clearAkan);
-document.getElementById("gender").addEventListener("focus",clearAkan);
+document.getElementById("birthday").addEventListener("focus", clearAkan);
+document.getElementById("gender").addEventListener("focus", clearAkan);
