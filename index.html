@@ -11,18 +11,20 @@
     />
   </head>
   <div class="container">
-   <div class="row">
-    <h1>What is your Akan Name?</h1>
-   </div>
-      <form class="row">
-        
-          <label>Enter Your Date of Birth:</label>
-        
-          <input type="date" id="birthday" name="birthday" />
-          <input type="submit" id="submitbirthday" class="col-md-1" />
-       
-      </form>
-  
+    <div class="row">
+      <h1>What is your Akan Name?</h1>
+    </div>
+    <form class="row">
+      <label>Enter Your Date of Birth:</label>
+
+      <input type="date" id="birthday" name="birthday" />
+      <select name="gender" id="gender">
+        <option value="none" selected disabled hidden>Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      <input type="submit" id="submit" class="col-md-1" />
+    </form>
   </div>
   <body>
     <script
