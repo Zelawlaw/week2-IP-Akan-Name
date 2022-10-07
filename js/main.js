@@ -1,0 +1,43 @@
+const DAY_NAME_MAP = new Map([
+  [0, ["Kwasi", "Akosua"]],
+  [1, ["Kwadwo", "Adwoa"]],
+  [2, ["Kwabena", "Abenaa"]],
+  [3, ["Kwaku", "Akua"]],
+  [4, ["Yaw", "Yaa"]],
+  [5, ["Kofi", "Afua"]],
+  [6, ["Kwame", "Ama"]],
+]);
+
+let thedate;
+let gender;
+let akan_name;
+let button = document.getElementById("submit");
+
+const validateDate = (date)=>{
+
+
+
+}
+
+button.addEventListener("click", () => {
+  
+  thedate = document.getElementById("birthday").valueAsDate;
+  gender = document.getElementById("gender").value;
+  let day_of_week =  thedate.getUTCDay();
+  switch(gender){
+  case 'male':
+  akan_name = DAY_NAME_MAP.get(day_of_week)[0];
+  break;
+  case 'female':
+    akan_name = DAY_NAME_MAP.get(day_of_week)[1];
+    break;
+    default:
+      alert("Kindly choose Gender!");
+      break;
+}
+console.log("day of week :"+day_of_week);
+console.log("Akan name is :"+akan_name);
+}
+);
+
+
