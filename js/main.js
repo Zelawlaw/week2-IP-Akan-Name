@@ -48,3 +48,7 @@ button.addEventListener("click", () => {
   }
   akanelement.innerHTML =akan_name;
 });
+
+const clearAkan = ()=>{
+  akanelement.innerHTML="";
+}
