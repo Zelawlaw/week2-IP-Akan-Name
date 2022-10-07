@@ -54,3 +54,4 @@ const clearAkan = ()=>{
 }
 
 document.getElementById("birthday").addEventListener("focus",clearAkan);
+document.getElementById("gender").addEventListener("focus",clearAkan);
