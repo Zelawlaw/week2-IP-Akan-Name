@@ -12,6 +12,7 @@ let thedate;
 let gender;
 let akan_name;
 let button = document.getElementById("submit");
+let akanelement = document.getElementById("akanName");
 
 const validateDate = (date) => {
   if (date > new Date()) {
@@ -43,8 +44,7 @@ button.addEventListener("click", () => {
       break;
     default:
       alert("Kindly choose Gender!");
-      break;
+      return;
   }
-  console.log("day of week :" + day_of_week);
-  console.log("Akan name is :" + akan_name);
+  akanelement.innerHTML =akan_name;
 });
